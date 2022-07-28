@@ -1,0 +1,63 @@
+:root{
+    /*Colores predeterminados*/
+    --Very-ligh-pink: #c7c7c7;
+    --White: #FFFF;
+    --Text-input-field: #f7f7f7;
+    --Hospital-green: #ACD9B2;
+    --Black: #000;
+    --Dark: #232830;
+    /*Estilos de fuentes*/
+    --sm:1.4rem;
+    --md:1.6rem;
+    --lg:2.0rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+.desktop-menu{
+    width: 132px;
+    height: auto;
+    border: var(--Very-ligh-pink) solid 1px;
+    border-radius: 6px;
+    padding: 20px 20px 0 20px;
+}
+.desktop-menu ul li a{
+    text-decoration: none;
+}
+.desktop-menu ul{
+    list-style: none;
+    margin: 0px;
+}
+.title{
+    color: var(--Black);
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.desktop-menu ul li{
+    text-align: end;
+}
+.desktop-menu ul li:last-child{
+    border-top: var(--Very-ligh-pink) solid 1px;
+    padding-top: 20px;
+    color: var(--Hospital-green);
+    font-size: var(--sm);
+}
+.desktop-menu ul li a {
+    color: var(--back);
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.out{
+    color: var(--Hospital-green);
+    font-size: var(--sm);
+    font-weight: 200;
+}

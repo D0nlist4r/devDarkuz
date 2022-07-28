@@ -1,0 +1,105 @@
+:root{
+    /*Colores predeterminados*/
+    --Very-ligh-pink: #c7c7c7;
+    --White: #FFFF;
+    --Text-input-field: #f7f7f7;
+    --Hospital-green: #ACD9B2;
+    --Black: #000;
+    --Dark: #232830;
+    /*Estilos de fuentes*/
+    --sm:1.4rem;
+    --md:1.6rem;
+    --lg:2.0rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+.login{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.container-login{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+.img-logo{
+    width: 150px;
+    margin-bottom: 48px;
+    justify-self: center;
+    display: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.input{
+    background-color: var(--Text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+}
+.primary-botton{
+    background-color: var(--Hospital-green);
+    border: none;
+    border-radius: 8px;
+    color: var(--White);
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    font-size: var(--md);
+    font-weight: bold;
+}
+.login-botton{
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+.resed{
+ display: flex;
+ justify-content: center;
+ margin-bottom: 120px;
+}
+.resed a{
+    font-size: var(--sm);
+    text-decoration: none;
+    color: var(--Hospital-green);
+}
+.second-button{
+    background-color: var(--Text-input-field);
+    border-radius: 8px;
+    color: var(--Hospital-green);
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    font-size: var(--md);
+    font-weight: 300;
+    border: #ACD9B2 solid 1px;
+}
+@media (max-width:640px){
+    .img-logo{
+        display: block;
+    }
+    .second-button{
+        width: 300px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 24px;
+    }
+}

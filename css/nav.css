@@ -1,0 +1,93 @@
+:root{
+    /*Colores predeterminados*/
+    --Very-ligh-pink: #c7c7c7;
+    --White: #FFFF;
+    --Text-input-field: #f7f7f7;
+    --Hospital-green: #ACD9B2;
+    --Black: #000;
+    --Dark: #232830;
+    /*Estilos de fuentes*/
+    --sm:1.4rem;
+    --md:1.6rem;
+    --lg:2.0rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--Very-ligh-pink);
+}
+.menu{
+    display: none;
+}
+.logo{
+    width: 100px;
+}
+.menu-left ul,.menu-right ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.menu-left{
+    display: flex;
+}
+.menu-left ul{
+    margin-left: 10px;
+}
+.menu-left ul li a,.menu-right ul li a{
+    text-decoration: none;
+    font-size: var(--md);
+    color: var(--Very-ligh-pink);
+    border: 1px solid var(--White);
+    padding: 8px;
+    border-radius: 6px;
+}
+.menu-left ul li a:hover,.menu-right ul li a:hover{
+    color: var(--Hospital-green);
+    border: 1px solid var(--Hospital-green);
+}
+.nav-email{
+    color: var(--Very-ligh-pink);
+    font-size: var(--sm);
+    margin-right: 12px;
+}
+.img-shopping{
+    position: relative;
+}
+.img-shopping div{
+    width: 10px;
+    height: 10px;
+    background-color: var(--Hospital-green);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -2px;
+    right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:640px){
+    .menu{
+        display: block;
+    }
+    .menu-left ul{
+        display: none;
+    }
+    .nav-email{
+        display: none;
+    }
+}
