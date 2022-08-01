@@ -7,21 +7,36 @@ const movileMenu = document.querySelector('.mobile-menu');
 const Carrito = document.querySelector('.img-shopping');
 const Myordercard = document.querySelector('.container-order');
 
+const producDetail = document.querySelector('.product-detail');
+
+const botonProductdetail = document.querySelector('.product-detail-closed')
+botonProductdetail.addEventListener('click',closedBotondetail);
+
+function closedBotondetail(){
+    producDetail.classList.add('inactive');
+}
 
 function openmenu(){
 
     const isOrderCardOpen = Myordercard.classList.contains('inactive');
+    const isOrdenDetailOpen = producDetail.classList.contains('inactive');
 
     if (!isOrderCardOpen){
         Myordercard.classList.add('inactive');
+    }else if(!isOrdenDetailOpen){
+        producDetail.classList.add('inactive');
     }
     desktopMenu.classList.toggle('inactive');
 }
 
 function openMenuMobile(){
     const isOrderCardOpen = Myordercard.classList.contains('inactive');
+    const isOrdenDetail = producDetail.classList.contains('inactive');
+
     if (!isOrderCardOpen){
         Myordercard.classList.add('inactive');
+    }else if(!isOrdenDetail){
+        producDetail.classList.add('inactive');
     }
 
     movileMenu.classList.toggle('inactive');
@@ -30,14 +45,28 @@ function openMenuMobile(){
 function OpenOrder(){
     const isOrderCardOpen = movileMenu.classList.contains('inactive');
     const isOrderCardOpen2 = desktopMenu.classList.contains('inactive');
+    const isOrdenDetailOpen = producDetail.classList.contains('inactive');
     
     if (!isOrderCardOpen){
         movileMenu.classList.add('inactive');
     }else  if(!isOrderCardOpen2){
         desktopMenu.classList.add('inactive');
+    }else if(!isOrdenDetailOpen){
+        producDetail.classList.add('inactive');
     }
 
     Myordercard.classList.toggle('inactive');
+}
+function openProductDetail(){
+    const isOrderCardOpen = Myordercard.classList.contains('inactive');
+    const isMenuDesktopen = desktopMenu.classList.contains('inactive');
+
+    if(!isOrderCardOpen){
+        Myordercard.classList.add('inactive');
+    }else if(!isMenuDesktopen){
+        desktopMenu.classList.add('inactive');
+    }
+    producDetail.classList.toggle('inactive');
 }
 
 Carrito.addEventListener('click',OpenOrder);
@@ -59,6 +88,7 @@ for (product of arr){
 
     const imagencard = document.createElement('img');
     imagencard.setAttribute('src',product.imagen);
+    imagencard.addEventListener('click',openProductDetail);
 
     const divProductInfo = document.createElement('div');
     divProductInfo.classList.add('product-info');
