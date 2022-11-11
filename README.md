@@ -1,8 +1,6 @@
-# Hi 👋
+## Hi 👋 , About me.
 
-## About me 🤓
-
-I'm Frontend developer, i love to create web applications 🎨, i like to learn new things 🧠 and read books 📚
+I'm Frontend developer, I love web3 , I like to learn new things, 🧠 and Cripto Trader 📈
 
 ## You can find me at 🌎
 
@@ -12,8 +10,8 @@ I'm Frontend developer, i love to create web applications 🎨, i like to learn 
 
 ## Just now
 
-- I'm learning React 📈
-- I'm studying English 🇺🇸
+- I'm learning React , webpack and firebase 🛠️
+- I'm studying English too
 - and "never stop learning" 📌
 
 ## My favorite projects 🛠️
