@@ -4,9 +4,9 @@ I'm Frontend developer, I love web3 , I like to learn new things, 🧠 and Cript
 
 ## You can find me at 🌎
 
-- 🍂 Instagram [link](#)
-- 🗣️ Twitter [link](#)
-- 🔎 Linkedin [link](#)
+- 🍂 Instagram 
+- 🗣️ Twitter 
+- 🔎 Linkedin
 
 ## Just now
 
